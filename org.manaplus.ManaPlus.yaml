@@ -1,10 +1,10 @@
 app-id: org.manaplus.ManaPlus
 runtime: org.freedesktop.Platform
-runtime-version: '20.08'
+runtime-version: '21.08'
 sdk: org.freedesktop.Sdk
 command: manaplus
 rename-desktop-file: manaplus.desktop
-rename-appdata-file: manaplus.appdata.xml
+rename-appdata-file: manaplus.metainfo.xml
 rename-icon: manaplus
 finish-args:
   - --share=ipc
@@ -48,13 +48,12 @@ modules:
   - name: manaplus
     sources:
       - type: archive
-        url: https://gitlab.com/manaplus/manaplus/-/archive/v1.9.3.23/manaplus-v1.9.3.23.tar.bz2
-        sha256: cc7133d88bcbf11d99b2d374a2e36f458251c24420a0e30b1af4bddce6b285fd
+        url: https://gitlab.com/manaplus/manaplus/-/archive/v2.1.3.17/manaplus-v2.1.3.17.tar.bz2
+        sha256: 87438404f7ccdeaa20aa1da5d000fb6030a1f25190a648cb763d1fda4ee3675d
       - type: patch
         paths:
           - remove-additional-desktop-items.patch
-          - fix-icon-path-and-type.patch
-          - fix-AppData-file.patch
+          - fix-metainfo-file.patch
       - type: script
         dest-filename: autogen.sh
         commands:
