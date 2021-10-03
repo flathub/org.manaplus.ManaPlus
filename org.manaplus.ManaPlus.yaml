@@ -4,7 +4,7 @@ runtime-version: '21.08'
 sdk: org.freedesktop.Sdk
 command: manaplus
 rename-desktop-file: manaplus.desktop
-rename-appdata-file: manaplus.appdata.xml
+rename-appdata-file: manaplus.metainfo.xml
 rename-icon: manaplus
 finish-args:
   - --share=ipc
