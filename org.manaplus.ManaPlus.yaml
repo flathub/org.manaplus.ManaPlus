@@ -10,7 +10,6 @@ finish-args:
   - --share=ipc
   - --share=network
   - --socket=x11
-  - --socket=wayland
   - --device=dri
   - --socket=pulseaudio
   - --persist=.config/mana
