@@ -53,6 +53,7 @@ modules:
         paths:
           - remove-additional-desktop-items.patch
           - fix-metainfo-file.patch
+          - fix-ctime-include.patch
       - type: script
         dest-filename: autogen.sh
         commands:

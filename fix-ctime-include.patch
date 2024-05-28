@@ -1,0 +1,28 @@
+diff --git a/src/progs/dyecmd/client.cpp b/src/progs/dyecmd/client.cpp
+index 481b8c423..98d6aa057 100644
+--- a/src/progs/dyecmd/client.cpp
++++ b/src/progs/dyecmd/client.cpp
+@@ -88,9 +88,7 @@ PRAGMA48(GCC diagnostic pop)
+ #undef ERROR
+ #endif  // WIN32
+ 
+-#ifdef __clang__
+ #include <ctime>
+-#endif  // __clang__
+ 
+ #ifdef ANDROID
+ #ifndef USE_SDL2
+diff --git a/src/resources/wallpaper.cpp b/src/resources/wallpaper.cpp
+index 5604b9cdd..d679817db 100644
+--- a/src/resources/wallpaper.cpp
++++ b/src/resources/wallpaper.cpp
+@@ -39,9 +39,7 @@
+ #include <sys/time.h>
+ #endif  // WIN32
+ 
+-#ifdef __clang__
+ #include <ctime>
+-#endif  // __clang__
+ 
+ #include "debug.h"
+ 
