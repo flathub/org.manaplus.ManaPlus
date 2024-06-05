@@ -1,12 +1,48 @@
 diff --git a/manaplus.metainfo.xml b/manaplus.metainfo.xml
-index 9feacda7f..83fa5f6a6 100644
+index 9feacda7f..84e7e6cb0 100644
 --- a/manaplus.metainfo.xml
 +++ b/manaplus.metainfo.xml
-@@ -29,4 +29,7 @@
+@@ -1,9 +1,11 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+-<application>
+-  <id type="desktop">manaplus.desktop</id>
++<component type="desktop-application">
++  <id>manaplus.desktop</id>
+   <metadata_license>CC0-1.0</metadata_license>
+   <project_license>GPL-2.0</project_license>
++  <launchable type="desktop-id">manaplus.desktop</launchable>
+   <name>The Mana Plus Client</name>
++  <developer_name>manaplus.org</developer_name>
+   <summary>Extended client for The Mana World and similar servers</summary>
+   <description>
+     <p>
+@@ -18,15 +20,24 @@
+ 	interactive world.
+     </p>
+   </description>
+-  <url type="homepage">http://manaplus.org/</url>
++  <url type="homepage">https://manaplus.org/</url>
+   <screenshots>
+-    <screenshot type="default">http://manaplus.org/_media/manaplus_screenshot_8.png</screenshot>
+-    <screenshot>http://manaplus.org/_media/manaplus_screenshot_11.png</screenshot>
+-    <screenshot>http://manaplus.org/_media/manaplus_screenshot_15.png</screenshot>
++    <screenshot type="default">
++        <image>https://manaplus.org/_media/manaplus_screenshot_8.png</image>
++    </screenshot>
++    <screenshot>
++        <image>https://manaplus.org/_media/manaplus_screenshot_11.png</image>
++    </screenshot>
++    <screenshot>
++        <image>https://manaplus.org/_media/manaplus_screenshot_15.png</image>
++    </screenshot>
+   </screenshots>
+   <content_rating type="oars-1.1">
+     <content_attribute id="violence-cartoon">mild</content_attribute>
      <content_attribute id="violence-fantasy">mild</content_attribute>
      <content_attribute id="social-chat">intense</content_attribute>
    </content_rating>
+-</application>
 +  <releases>
 +    <release version="2.1.3.17" date="2021-03-17"/>
 +  </releases>
- </application>
++</component>
