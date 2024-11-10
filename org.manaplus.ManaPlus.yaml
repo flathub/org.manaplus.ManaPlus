@@ -54,6 +54,8 @@ modules:
           - remove-additional-desktop-items.patch
           - fix-metainfo-file.patch
           - fix-ctime-include.patch
+          - support-newer-libxml2.patch
+          - add-missing-net-ea-includes.patch
       - type: script
         dest-filename: autogen.sh
         commands:
