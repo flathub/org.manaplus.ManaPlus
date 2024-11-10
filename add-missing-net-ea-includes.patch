@@ -1,0 +1,38 @@
+From 63912a8a6bfaecdb6b40d2a89191a2fb5af32906 Mon Sep 17 00:00:00 2001
+From: Andrei Karas <akaras@inbox.ru>
+Date: Wed, 14 Jun 2023 16:59:20 +0300
+Subject: [PATCH] Add missing cstdint includes in net ea header files [ci skip]
+
+https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1037767
+---
+ src/net/ea/chatrecv.h  | 1 +
+ src/net/ea/traderecv.h | 1 +
+ 2 files changed, 2 insertions(+)
+
+diff --git a/src/net/ea/chatrecv.h b/src/net/ea/chatrecv.h
+index 8dc29002e..df4188690 100644
+--- a/src/net/ea/chatrecv.h
++++ b/src/net/ea/chatrecv.h
+@@ -28,6 +28,7 @@
+ #if defined(__APPLE__)
+ #include <tr1/cstdint>
+ #endif  // defined(__APPLE__)
++#include <cstdint>
+ #else  // defined(__GXX_EXPERIMENTAL_CXX0X__)
+ #include <stdint.h>
+ #endif  // defined(__GXX_EXPERIMENTAL_CXX0X__)
+diff --git a/src/net/ea/traderecv.h b/src/net/ea/traderecv.h
+index d850fee47..2d9626a8e 100644
+--- a/src/net/ea/traderecv.h
++++ b/src/net/ea/traderecv.h
+@@ -28,6 +28,7 @@
+ #if defined(__APPLE__)
+ #include <tr1/cstdint>
+ #endif  // defined(__APPLE__)
++#include <cstdint>
+ #else  // defined(__GXX_EXPERIMENTAL_CXX0X__)
+ #include <stdint.h>
+ #endif  // defined(__GXX_EXPERIMENTAL_CXX0X__)
+-- 
+2.47.0
+
